@@ -1,4 +1,5 @@
 import qrcode
+import sys
 
 def generate_youtube_qr(url):
     # Проверяем, что ссылка ведет на YouTube
@@ -22,6 +23,8 @@ def generate_youtube_qr(url):
         print("".join(["██" if cell else "  " for cell in row]))
 
 if __name__ == "__main__":
-    # Запрашиваем ссылку у пользователя
-    youtube_url = input("Введите ссылку на YouTube видео: ")
-    generate_youtube_qr(youtube_url)
+    if len(sys.argv) != 2:
+        print("Использование: python qr_code.py <YouTube-ссылка>")
+    else:
+        youtube_url = sys.argv[1]
+        generate_youtube_qr(youtube_url)
