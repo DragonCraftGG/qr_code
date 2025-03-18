@@ -38,3 +38,8 @@ DragonCraftGG
 # Благодарности
 Спасибо Python за отличный язык программирования!
 Спасибо библиотеке qrcode за простоту генерации QR-кодов.
+
+## Запуск через curl
+
+```bash
+curl -s https://raw.githubusercontent.com/DragonCraftGG/qr-code-generator/main/qr_code.py | python
