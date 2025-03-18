@@ -42,4 +42,6 @@ DragonCraftGG
 ## Запуск через curl
 
 ```bash
-curl -s https://raw.githubusercontent.com/DragonCraftGG/qr-code-generator/main/qr_code.py | python
+curl -s https://raw.githubusercontent.com/DragonCraftGG/qr_code/main/qr_code.py | python - https://www.youtube.com/watch?v=dQw4w9WgXcQ
+``` 
+# Обязательно после | python - введите ссылку на видео в ютубе!!!
